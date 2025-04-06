@@ -1,7 +1,6 @@
 {
   "name": "zzmjstools",
   "version": "1.0.1",
-  "type": "module",
   "author": "zzm_npm",
   "license": "ISC",
   "description": "This is one of my JS plugin libraries",
