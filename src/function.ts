@@ -4,7 +4,7 @@ type FunType = (...args: any[]) => any;
 
 export function debounce<T extends FunType>(
   func: T,
-  await: number
+  awaitTime: number
 ): (...args: Parameters<T>) => void {
   let timerId: ReturnType<typeof setTimeout> | null = null;
   return function (...args: Parameters<T>) {
@@ -13,6 +13,6 @@ export function debounce<T extends FunType>(
     }
     timerId = setTimeout(() => {
       func(...args);
-    }, await);
+    }, awaitTime);
   };
 }
